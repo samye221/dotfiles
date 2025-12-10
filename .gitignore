@@ -1,0 +1,66 @@
+# Secrets and sensitive files
+.env
+.env.local
+.env.production
+*.key
+*.pem
+*.crt
+*.p12
+*_secrets.*
+*_credentials.*
+
+# Personal overrides (DO NOT commit with real secrets!)
+SECRETS.md.filled
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+._*
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+
+# Directories potentially containing secrets
+.ssh/
+.gnupg/
+
+# Backup files
+*.backup
+*.bak
+*.swp
+*.swo
+*~
+
+# Editor specific
+.vscode/settings.local.json
+.idea/
+
+# Logs
+*.log
+logs/
+
+# Test outputs
+test-results/
+coverage/
+
+# Node
+node_modules/
+
+# Python
+__pycache__/
+*.py[cod]
+.Python
+.venv/
+venv/
+ENV/
+
+# Temporary files
+tmp/
+temp/
+.cache/

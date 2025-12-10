@@ -1,0 +1,41 @@
+{
+  "yoloMode": true,
+  "containerMode": false,
+  "model": "sonnet",
+  "mcpServers": {
+    "browsermcp": {
+      "command": "npx",
+      "args": ["@browsermcp/mcp@latest"]
+    },
+    "playwright": {
+      "command": "npx",
+      "args": ["-y", "@playwright/mcp@latest"]
+    }
+  },
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "Edit(**.{ts,tsx,js,jsx})",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "prettier --write \"$FILE_PATH\" 2>/dev/null || true",
+            "description": "Auto-format TypeScript/JavaScript files"
+          }
+        ]
+      }
+    ],
+    "PostToolUse": [
+      {
+        "matcher": "Write(**.{ts,tsx})",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "eslint --fix \"$FILE_PATH\" 2>/dev/null || true",
+            "description": "Auto-lint new TypeScript files"
+          }
+        ]
+      }
+    ]
+  }
+}

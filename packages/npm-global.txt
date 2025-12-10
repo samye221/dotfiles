@@ -1,0 +1,15 @@
+# Essential global npm packages
+# One package per line, lines starting with # are ignored
+
+# Package managers
+corepack
+npm
+pnpm
+yarn
+
+# Development tools
+wrangler
+
+# Note: The following MCP servers are excluded (VPTech-specific):
+# - jira-mcp (VPTech only)
+# - @modelcontextprotocol/server-gitlab (VPTech only)

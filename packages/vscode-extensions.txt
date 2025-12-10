@@ -1,0 +1,14 @@
+anthropic.claude-code
+figma.figma-vscode-extension
+github.copilot
+github.copilot-chat
+khaeransori.json2csv
+mechatroner.rainbow-csv
+ms-ceintl.vscode-language-pack-fr
+ms-vscode.vscode-copilot-vision
+ms-vscode.vscode-speech
+ms-vscode.vscode-speech-language-pack-fr-fr
+orta.vscode-jest
+rooveterinaryinc.roo-cline
+sallar.json-to-js-object
+vstirbu.vscode-mermaid-preview

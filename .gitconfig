@@ -1,0 +1,44 @@
+# Git global configuration
+# After installation, configure your identity:
+# git config --global user.name "Your Name"
+# git config --global user.email "your.email@example.com"
+
+[user]
+	name = REPLACE_WITH_YOUR_NAME
+	email = REPLACE_WITH_YOUR_EMAIL
+
+[color]
+	ui = auto
+
+[alias]
+	st = status
+	stn = status -uno
+	cm = commit
+	br = branch
+	who = shortlog -sne
+	go = rebase --continue
+	skip = rebase --skip
+	nope = rebase --abort
+	mergep = merge --patience
+	ci = commit
+	oops = commit --amend --no-edit
+	co = checkout
+	sh = stash save -u
+	shp = stash pop --index
+	df = diff
+	dfs = diff --staged
+	dfw = diff --word-diff
+	lg = log --graph --pretty=tformat:'%Cred%h%Creset -%C(auto)%d%Creset %s %Cgreen(%an %ar)%Creset' --abbrev-commit --date=relative --all
+	lgg = log -20 --graph --pretty=tformat:'%Cred%h%Creset -%C(auto)%d%Creset %s %Cgreen(%an %ar)%Creset'
+	lp = log -p
+	lt = log --topo-order
+
+[core]
+	excludesfile = ~/.gitignore_global
+	editor = vim
+
+[push]
+	default = simple
+
+[pull]
+	rebase = false

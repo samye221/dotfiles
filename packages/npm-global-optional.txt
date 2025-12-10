@@ -1,0 +1,8 @@
+# Packages npm optionnels (à installer selon besoin)
+
+# MCP Servers génériques (nécessitent configuration)
+chrome-devtools-mcp
+whatsapp-mcp
+
+# Claude Code
+@anthropic-ai/claude-code
