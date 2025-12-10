@@ -25,7 +25,11 @@ Portable development environment configuration for macOS. Designed for quick set
 
 ---
 
-## 🎯 Quick Start (Manual Installation)
+## 🎯 Quick Start
+
+**⚡ TL;DR:** See [QUICKSTART.md](./QUICKSTART.md) for a fast-track installation guide with copy/paste commands.
+
+**📖 Detailed Guide:** Continue reading below for step-by-step instructions.
 
 ### Prerequisites
 - macOS (tested on macOS 14+)
